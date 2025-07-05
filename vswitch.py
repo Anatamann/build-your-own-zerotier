@@ -63,6 +63,8 @@ while True:
     # This is expected when no data is received.
     # The loop continues, allowing KeyboardInterrupt to be processed.
     continue
+  except ConnectionResetError:
+    continue
   except ConnectionRefusedError:
     # This error occurs if a VPort client has been closed and the switch
     # attempts to send data to it. This is expected in a UDP environment.
