@@ -1,7 +1,7 @@
 [English](README.md)
 
 # Build your own Zerotier
-
+> ⚠️ To test the vswitch in wondows machine in a localhost environment without TAP requiring refer `breakdown/testing_guide.md` on `feat/local-testing` branch.
 ## Introduction
 
 Implement a L2 VPN similar to Zerotier or a Virtual Switch.
