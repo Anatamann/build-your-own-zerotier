@@ -33,7 +33,7 @@ Open **three separate WSL2 terminals**.
     ```
 2.  Start the virtual switch and have it listen on port `8000`:
     ```bash
-    python3 vswitch.py 8000
+    python vswitch.py 8000
     ```
     You will see a message like `[VSwitch] Started at 0.0.0.0:8000`. It is now waiting for frames.
 
@@ -63,7 +63,7 @@ Now we'll simulate the initial network discovery.
 
 *   **In Terminal 2 (VM1), execute:**
     ```bash
-    python3 vport.py 127.0.0.1 8000 0a:0a:0a:0a:0a:0a 0b:0b:0b:0b:0b:0b
+    python vport.py 127.0.0.1 8000 0a:0a:0a:0a:0a:0a 0b:0b:0b:0b:0b:0b
     ```
 
 *   **What to Expect:**
@@ -86,7 +86,7 @@ Now we'll simulate the initial network discovery.
 
 *   **In Terminal 3 (VM2), execute:**
     ```bash
-    python3 vport.py 127.0.0.1 8000 0b:0b:0b:0b:0b:0b 0a:0a:0a:0a:0a:0a
+    python vport.py 127.0.0.1 8000 0b:0b:0b:0b:0b:0b 0a:0a:0a:0a:0a:0a
     ```
 
 *   **What to Expect:**
